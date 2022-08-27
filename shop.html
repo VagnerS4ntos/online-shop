@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Multishop</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid bg-light">
+      <div class="container d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap">
+        <ul class="list-unstyled gap-3 d-none d-lg-flex m-0">
+          <li><a class="text-decoration-none text-secondary" href="">About</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">Contact</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">Help</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">FAQs</a></li>
+        </ul>
+
+        <div class="d-flex">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              My Account
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Sign in</a></li>
+              <li><a class="dropdown-item" href="#">Sign un</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              USD
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+              <li><a class="dropdown-item" href="#">BRL</a></li>
+              <li><a class="dropdown-item" href="#">CAD</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              EN
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">BR</a></li>
+              <li><a class="dropdown-item" href="#">FR</a></li>
+              <li><a class="dropdown-item" href="#">ES</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none ms-3">
+          <i class="fas fa-heart"></i>
+          <span class="me-3">0</span>
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-none d-lg-flex align-items-center justify-content-between py-2">
+      <div>
+        <a href="index.html" class="text-uppercase text-decoration-none fs-1 fw-bold text-warning bg-dark-grey ps-2">Multi<span class="text-dark-grey bg-warning pe-2">Shop</span></a>
+      </div>
+
+      <div class="input-group w-25">
+        <input class="form-control" type="search" placeholder="Search for products">
+        <button class="btn border text-warning">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div>
+        <p class="m-0">Customer Service</p>
+        <p class="m-0 fw-bold">+012 345 6789</p>
+      </div>
+    </div>
+
+    <div class="bg-dark-grey">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <div class="container-fluid px-0">
+            <div class="dropdown navbar-brand py-0 d-none d-lg-block">
+              <button class="border-0 bg-warning p-3 dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars me-2"></i>
+                Categories
+              </button>
+              <div class="dropdown-menu w-100 my-0 border-0 rounded-bottom" aria-labelledby="dropdownMenuButton1">
+                <a class="dropdown-item" href="#">Shirts</a>
+                <a class="dropdown-item" href="#">Jeans</a>
+                <a class="dropdown-item" href="#">Swimwear</a>
+                <a class="dropdown-item" href="#">Sportswear</a>
+                <a class="dropdown-item" href="#">Sleepwaer</a>
+                <a class="dropdown-item" href="#">Jumpsuit</a>
+                <a class="dropdown-item" href="#">Blazers</a>
+                <a class="dropdown-item" href="#">Jackets</a>
+                <a class="dropdown-item" href="#">Shoes</a>
+              </div>
+            </div>
+            <div class="navbar-brand d-block d-lg-none">
+              <a href="index.html" class="text-uppercase text-decoration-none fs-1 fw-bold bg-white text-dark-grey ps-2">Multi<span class="text-white bg-warning pe-2">Shop</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white hover-yellow" aria-current="page" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="detail.html">Shop Detail</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white hover-yellow" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="cart.html">Shopping Cart</a></li>
+                    <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              </ul>
+
+              <div class="text-warning mb-2 mb-lg-0">
+                <i class="fas fa-heart"></i>
+                <span>0</span>
+                <i class="fas fa-shopping-cart ms-2"></i>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <h3 class="mb-3 text-uppercase">Filter by Price</h3>
+
+          <div class="bg-white p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox1">
+                <label for="custom-checkbox1" class="m-0 custom-label">All Price</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox2">
+                <label for="custom-checkbox2" class="m-0 custom-label">$0 - $100</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox3">
+                <label for="custom-checkbox3" class="m-0 custom-label">$101 - $200</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox4">
+                <label for="custom-checkbox4" class="m-0 custom-label">$201 - $300</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox5">
+                <label for="custom-checkbox5" class="m-0 custom-label">$301 - $400</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox6">
+                <label for="custom-checkbox6" class="m-0 custom-label">$401 - $500</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+          </div>
+
+
+          <h3 class="my-3 text-uppercase">Filter by Color</h3>
+
+          <div class="bg-white p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox7">
+                <label for="custom-checkbox7" class="m-0 custom-label">All Color</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox8">
+                <label for="custom-checkbox8" class="m-0 custom-label">Black</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox9">
+                <label for="custom-checkbox9" class="m-0 custom-label">White</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox10">
+                <label for="custom-checkbox10" class="m-0 custom-label">Red</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox11">
+                <label for="custom-checkbox11" class="m-0 custom-label">Blue</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox12">
+                <label for="custom-checkbox12" class="m-0 custom-label">Green</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+          </div>
+
+
+          <h3 class="my-3 text-uppercase">Filter by Size</h3>
+
+          <div class="bg-white p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox13">
+                <label for="custom-checkbox13" class="m-0 custom-label">All Sizes</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox14">
+                <label for="custom-checkbox14" class="m-0 custom-label">XS</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox15">
+                <label for="custom-checkbox15" class="m-0 custom-label">S</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox16">
+                <label for="custom-checkbox16" class="m-0 custom-label">M</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox17">
+                <label for="custom-checkbox17" class="m-0 custom-label">L</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <input class="me-1 custom-checkbox" type="checkbox" id="custom-checkbox18">
+                <label for="custom-checkbox18" class="m-0 custom-label">XL</label>
+              </div>
+              <p class="border px-1 m-0">1000</p>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class="col-12 col-lg-9">
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mt-5 mb-3">
+            <div class="d-flex gap-3">
+              <a class="text-muted" href="">
+                <i class="fa fa-th-large fa-lg"></i>
+              </a>
+              <a class="text-muted" href="">
+                <i class="fa fa-bars fa-lg"></i>
+              </a>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 ms-auto">
+              <div class="dropdown">
+                <button class="btn text-dark bg-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sorting
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Latest</a></li>
+                  <li><a class="dropdown-item" href="#">Popularity</a></li>
+                  <li><a class="dropdown-item" href="#">Best Rating</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn text-dark bg-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Showing
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">10</a></li>
+                  <li><a class="dropdown-item" href="#">20</a></li>
+                  <li><a class="dropdown-item" href="#">30</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 mt-lg-0">
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-1.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-2.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-3.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-4.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-5.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-6.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-7.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-8.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col product-hover">
+              <div class="bg-light text-center">
+                <div class="position-relative">
+                  <div>
+                    <img class="img-fluid" src="img/product-9.jpg" alt="">
+                  </div>
+                  <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 bg-white">
+                  <p class="fw-bold m-0">Product Name Here</p>
+                  <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span class="text-secondary">(99)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center mt-3">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link text-white" href="#">1</a>
+                </li>
+                <li class="page-item" aria-current="page">
+                  <a class="page-link text-warning" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link text-warning" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link text-warning" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="bg-dark-grey pt-5">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-uppercase fw-bold">Get in Touch</h3>
+          <p class="">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor
+          </p>
+          <ul class="list-unstyled">
+            <li class="footer-contact my-1">123 Street, New York, USA</li>
+            <li class="footer-contact my-1">info@example.com</li>
+            <li class="footer-contact my-1">+012 345 67890</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-blue text-uppercase fw-bold">Quick Links</h3>
+          <ul class="text-white list-unstyled">
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Home</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">About Us</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Our Services</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Meet The Team</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Latest Blog</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-uppercase fw-bold">Popular Links</h3>
+          <ul class="list-unstyled">
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Home</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">About Us</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Our Services</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Meet The Team</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Latest Blog</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-blue text-uppercase fw-bold">Newsletter</h3>
+          <div class="input-group">
+            <input class="form-control border-0" type="text" placeholder="You Email">
+            <button class="btn btn-warning text-secondary">Sign Up</button>
+          </div>
+          <p class="text-blue fw-bold text-uppercase my-3">Follow Us</p>
+          <div class="d-flex text-white gap-3 flex-wrap">
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <p class="text-white">© Domain. All Rights Reserved. Designed by HTML Codex</p>
+        </div>
+        <div class="col-12 col-sm-6 text-start text-sm-end pb-2">
+          <img class="img-fluid" src="img/payments.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+:root {
+  --dark-grey: #3d464d;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.bg-dark-grey {
+  background-color: var(--dark-grey) !important;
+}
+
+.text-dark-grey {
+  color: var(--dark-grey) !important;
+}
+
+.nav-link.active {
+  color: #ffca2c !important;
+}
+
+.hover-yellow:hover {
+  color: #ffca2c !important;
+}
+
+.brightness-60 {
+  filter: brightness(60%);
+}
+
+.btn-white {
+  color: white;
+  border: 1px solid white;
+}
+.btn-white:hover {
+  background-color: white;
+  color: black;
+}
+
+.img-carousel {
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .img-carousel {
+    display: block;
+    width: auto;
+  }
+}
+
+.text-width {
+  width: 50%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 992px) {
+  .text-width {
+    width: 90%;
+  }
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  background-color: transparent !important;
+  border: 1px solid white !important;
+}
+.carousel-indicators .active {
+  background-color: white !important;
+  width: 25px !important;
+  transition: 0.2s;
+}
+
+.dashed {
+  border-top: 1px dashed #000;
+  background-color: #fff;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.categories-img {
+  transition: 0.5s;
+}
+.categories-hover:hover .categories-img {
+  transform: rotate(10deg) scale(1.2);
+}
+
+.categories-text {
+  z-index: 10;
+}
+
+.bg-white-50 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.product-hover:hover .product-options {
+  display: flex !important;
+  transition: 0.2s;
+}
+
+.product-icon-hover:hover {
+  background-color: #3d464d;
+  color: #ffd333;
+  transition: 0.2s;
+}
+
+@keyframes anima-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.product-icon-hover {
+  animation-name: anima-up;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.product-icon-hover:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.product-icon-hover:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.product-icon-hover:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.footer-contact::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: var(--main-blue);
+  margin-right: 10px;
+  color: #ffd333;
+}
+
+.footer-contact:nth-child(1)::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f3c5';
+}
+.footer-contact:nth-child(2)::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0e0';
+}
+.footer-contact:nth-child(3)::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f879';
+}
+
+.footer-links::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: var(--main-blue);
+  margin-right: 10px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f105';
+}
+
+.custom-checkbox {
+  display: none;
+}
+
+.custom-checkbox:checked ~ .custom-label::before {
+  font-weight: 900;
+  content: '\f14a';
+  color: #ffd333;
+}
+
+.custom-label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 5px;
+  content: '\f0c8';
+  color: #ffd333;
+}
+
+.page-item.active .page-link {
+  background-color: #ffd333;
+  border-color: #ffd333;
+}
+
+.custom-radio-label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Font Awesome 5 Free';
+  content: '\f111';
+  margin-right: 5px;
+}
+
+.custom-radio:checked ~ .custom-radio-label::before {
+  content: '\f192';
+  font-weight: 900;
+  color: #ffd333;
+}
+
+.custom-radio {
+  display: none;
+}
+
+.width-50 {
+  width: 50px;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.carousel-item {
+  transition: 0.5s;
+}

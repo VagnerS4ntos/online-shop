@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Multishop</title>
+</head>
+
+<body class="bg-light">
+  <header>
+    <div class="container-fluid bg-light">
+      <div class="container d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap">
+        <ul class="list-unstyled gap-3 d-none d-lg-flex m-0">
+          <li><a class="text-decoration-none text-secondary" href="">About</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">Contact</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">Help</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">FAQs</a></li>
+        </ul>
+
+        <div class="d-flex">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              My Account
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Sign in</a></li>
+              <li><a class="dropdown-item" href="#">Sign un</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              USD
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+              <li><a class="dropdown-item" href="#">BRL</a></li>
+              <li><a class="dropdown-item" href="#">CAD</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              EN
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">BR</a></li>
+              <li><a class="dropdown-item" href="#">FR</a></li>
+              <li><a class="dropdown-item" href="#">ES</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none ms-3">
+          <i class="fas fa-heart"></i>
+          <span class="me-3">0</span>
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-white">
+      <div class="container d-none d-lg-flex align-items-center justify-content-between py-2">
+        <div>
+          <a href="index.html" class="text-uppercase text-decoration-none fs-1 fw-bold text-warning bg-dark-grey ps-2">Multi<span class="text-dark-grey bg-warning pe-2">Shop</span></a>
+        </div>
+
+        <div class="input-group w-25">
+          <input class="form-control" type="search" placeholder="Search for products">
+          <button class="btn border text-warning">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div>
+          <p class="m-0">Customer Service</p>
+          <p class="m-0 fw-bold">+012 345 6789</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bg-dark-grey">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <div class="container-fluid px-0">
+            <div class="dropdown navbar-brand py-0 d-none d-lg-block">
+              <button class="border-0 bg-warning p-3 dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars me-2"></i>
+                Categories
+              </button>
+              <div class="dropdown-menu w-100 my-0 border-0 rounded-bottom" aria-labelledby="dropdownMenuButton1">
+                <a class="dropdown-item" href="#">Shirts</a>
+                <a class="dropdown-item" href="#">Jeans</a>
+                <a class="dropdown-item" href="#">Swimwear</a>
+                <a class="dropdown-item" href="#">Sportswear</a>
+                <a class="dropdown-item" href="#">Sleepwaer</a>
+                <a class="dropdown-item" href="#">Jumpsuit</a>
+                <a class="dropdown-item" href="#">Blazers</a>
+                <a class="dropdown-item" href="#">Jackets</a>
+                <a class="dropdown-item" href="#">Shoes</a>
+              </div>
+            </div>
+            <div class="navbar-brand d-block d-lg-none">
+              <a href="index.html" class="text-uppercase text-decoration-none fs-1 fw-bold bg-white text-dark-grey ps-2">Multi<span class="text-white bg-warning pe-2">Shop</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="detail.html">Shop Detail</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle text-white hover-yellow" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="cart.html">Shopping Cart</a></li>
+                    <li><a class="dropdown-item text-white" href="checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              </ul>
+
+              <div class="text-warning mb-2 mb-lg-0">
+                <i class="fas fa-heart"></i>
+                <span>0</span>
+                <i class="fas fa-shopping-cart ms-2"></i>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3 class="my-3 text-uppercase">Confirm Payment</h3>
+          <div>
+            <form class="row g-2 p-3 fs-5 bg-white shadow">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCPF" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="inputCPF" placeholder="xxx.xxx.xxx-xx">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="inputEmail">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPass" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPass">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Street name and number">
+              </div>
+              <div class="col-md-5">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Select a state</option>
+                  <option>Rio de Janeiro</option>
+                  <option>São Pauloo</option>
+                  <option>Minas Gerais</option>
+                  <option>Espírito Santo</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputCEP" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputCEP">
+              </div>
+            </form>
+
+            <div class="bg-white rounded shadow p-4 form-group my-5">
+              <h2 class="h6 text-dark text-uppercase">Payment</h2>
+
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item me-3 mb-2" role="presentation">
+                  <button class="active btn-warning btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Credit Card</button>
+                </li>
+                <li class="nav-item mb-3" role="presentation">
+                  <button class="btn-warning btn " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bank payment</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <form class="row g-3 fs-4">
+                    <div class="col-md-6">
+                      <label for="inputCardName" class="form-label">Name in the credit card</label>
+                      <input type="text" class="form-control" id="inputCardName" placeholder="Name printed on card">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputMonth" class="form-label">Month</label>
+                      <select id="inputMonth" class="form-select">
+                        <option selected>Expiration</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputYear" class="form-label">Year</label>
+                      <select id="inputYear" class="form-select">
+                        <option selected>Expiration</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCardNumber" class="form-label">Credit card number</label>
+                      <input type="text" class="form-control" id="inputCardNumber" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCódigo" class="form-label">Security Code</label>
+                      <input type="text" class="form-control" id="inputCódigo" placeholder="XXX">
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade fs-4 lead" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  Click on "Confirm Payment" and we will send a bill to your e-mail.</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning btn-lg mt-3">Confirm Payment</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <h3 class="my-3 text-uppercase">Order Total</h3>
+          <div class="row g-2 p-3 fs-5 bg-white shadow">
+            <p class="m-0">Products</p>
+            <div class="d-flex justify-content-between">
+              <p class="m-0">Product Name 1</p>
+              <span>$150</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="m-0">Product Name 2</p>
+              <span>$150</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="m-0">Product Name 3</p>
+              <span>$150</span>
+            </div>
+            <hr class="my-2">
+            <div class="d-flex justify-content-between">
+              <p class="m-0 fw-bold">Subtotal</p>
+              <span class="fw-bold js-subtotal">$450</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="m-0 fw-bold">Shipping</p>
+              <span class="fw-bold js-shipping">$10</span>
+            </div>
+            <hr class="my-2">
+            <div class="d-flex justify-content-between">
+              <p class="m-0 fw-bold">Total</p>
+              <span class="fw-bold js-cart-total">$460</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+  <footer class="bg-dark-grey pt-5">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-uppercase fw-bold">Get in Touch</h3>
+          <p class="">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor
+          </p>
+          <ul class="list-unstyled">
+            <li class="footer-contact my-1">123 Street, New York, USA</li>
+            <li class="footer-contact my-1">info@example.com</li>
+            <li class="footer-contact my-1">+012 345 67890</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-blue text-uppercase fw-bold">Quick Links</h3>
+          <ul class="text-white list-unstyled">
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Home</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">About Us</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Our Services</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Meet The Team</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Latest Blog</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-uppercase fw-bold">Popular Links</h3>
+          <ul class="list-unstyled">
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Home</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">About Us</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Our Services</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Meet The Team</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Latest Blog</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-blue text-uppercase fw-bold">Newsletter</h3>
+          <div class="input-group">
+            <input class="form-control border-0" type="text" placeholder="You Email">
+            <button class="btn btn-warning text-secondary">Sign Up</button>
+          </div>
+          <p class="text-blue fw-bold text-uppercase my-3">Follow Us</p>
+          <div class="d-flex text-white gap-3 flex-wrap">
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <p class="text-white">© Domain. All Rights Reserved. Designed by HTML Codex</p>
+        </div>
+        <div class="col-12 col-sm-6 text-start text-sm-end pb-2">
+          <img class="img-fluid" src="img/payments.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

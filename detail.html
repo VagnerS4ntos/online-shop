@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Multishop</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid bg-light">
+      <div class="container d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap">
+        <ul class="list-unstyled gap-3 d-none d-lg-flex m-0">
+          <li><a class="text-decoration-none text-secondary" href="">About</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">Contact</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">Help</a></li>
+          <li><a class="text-decoration-none text-secondary" href="">FAQs</a></li>
+        </ul>
+
+        <div class="d-flex">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              My Account
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Sign in</a></li>
+              <li><a class="dropdown-item" href="#">Sign un</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              USD
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+              <li><a class="dropdown-item" href="#">BRL</a></li>
+              <li><a class="dropdown-item" href="#">CAD</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              EN
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">BR</a></li>
+              <li><a class="dropdown-item" href="#">FR</a></li>
+              <li><a class="dropdown-item" href="#">ES</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none ms-3">
+          <i class="fas fa-heart"></i>
+          <span class="me-3">0</span>
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-none d-lg-flex align-items-center justify-content-between py-2">
+      <div>
+        <a href="index.html" class="text-uppercase text-decoration-none fs-1 fw-bold text-warning bg-dark-grey ps-2">Multi<span class="text-dark-grey bg-warning pe-2">Shop</span></a>
+      </div>
+
+      <div class="input-group w-25">
+        <input class="form-control" type="search" placeholder="Search for products">
+        <button class="btn border text-warning">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div>
+        <p class="m-0">Customer Service</p>
+        <p class="m-0 fw-bold">+012 345 6789</p>
+      </div>
+    </div>
+
+    <div class="bg-dark-grey">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <div class="container-fluid px-0">
+            <div class="dropdown navbar-brand py-0 d-none d-lg-block">
+              <button class="border-0 bg-warning p-3 dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars me-2"></i>
+                Categories
+              </button>
+              <div class="dropdown-menu w-100 my-0 border-0 rounded-bottom" aria-labelledby="dropdownMenuButton1">
+                <a class="dropdown-item" href="#">Shirts</a>
+                <a class="dropdown-item" href="#">Jeans</a>
+                <a class="dropdown-item" href="#">Swimwear</a>
+                <a class="dropdown-item" href="#">Sportswear</a>
+                <a class="dropdown-item" href="#">Sleepwaer</a>
+                <a class="dropdown-item" href="#">Jumpsuit</a>
+                <a class="dropdown-item" href="#">Blazers</a>
+                <a class="dropdown-item" href="#">Jackets</a>
+                <a class="dropdown-item" href="#">Shoes</a>
+              </div>
+            </div>
+            <div class="navbar-brand d-block d-lg-none">
+              <a href="index.html" class="text-uppercase text-decoration-none fs-1 fw-bold bg-white text-dark-grey ps-2">Multi<span class="text-white bg-warning pe-2">Shop</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white hover-yellow" aria-current="page" href="detail.html">Shop Detail</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white hover-yellow" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="cart.html">Shopping Cart</a></li>
+                    <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hover-yellow" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              </ul>
+
+              <div class="text-warning mb-2 mb-lg-0">
+                <i class="fas fa-heart"></i>
+                <span>0</span>
+                <i class="fas fa-shopping-cart ms-2"></i>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 bg-light">
+          <div class="bg-white h-100  d-flex align-items-center">
+            <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+          </div>
+        </div>
+
+
+        <div class="col-lg-7 my-4 my-lg-0 bg-light">
+          <div class="bg-white p-3 h-100">
+            <h2>Product Name</h2>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+              <span class="text-secondary ms-2">(99 Reviews)</span>
+            </div>
+            <h3 class="my-2">$150.00</h3>
+            <p>Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea Nonumy</p>
+            <div class="d-flex flex-wrap">
+              <p class="fw-bold me-4">Sizes: </p>
+              <div class="d-flex gap-4 flex-wrap mb-4 mb-sm-0">
+                <div>
+                  <input class="custom-radio" type="radio" name="sizes-option" id="flexRadioDefault1">
+                  <label class="custom-radio-label" for="flexRadioDefault1">XS</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="sizes-option" id="flexRadioDefault2">
+                  <label class="custom-radio-label" for="flexRadioDefault2">S</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="sizes-option" id="flexRadioDefault3">
+                  <label class="custom-radio-label" for="flexRadioDefault3">M</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="sizes-option" id="flexRadioDefault4">
+                  <label class="custom-radio-label" for="flexRadioDefault4">L</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="sizes-option" id="flexRadioDefault5">
+                  <label class="custom-radio-label" for="flexRadioDefault5">XL</label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap">
+              <p class="fw-bold me-4">Colors: </p>
+              <div class="d-flex gap-4 flex-wrap">
+                <div>
+                  <input class="custom-radio" type="radio" name="colors-option" id="flexRadioDefault6">
+                  <label class="custom-radio-label" for="flexRadioDefault6">Black</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="colors-option" id="flexRadioDefault7">
+                  <label class="custom-radio-label" for="flexRadioDefault7">White</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="colors-option" id="flexRadioDefault8">
+                  <label class="custom-radio-label" for="flexRadioDefault8">Red</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="colors-option" id="flexRadioDefault9">
+                  <label class="custom-radio-label" for="flexRadioDefault9">Blue</label>
+                </div>
+                <div>
+                  <input class="custom-radio" type="radio" name="colors-option" id="flexRadioDefault10">
+                  <label class="custom-radio-label" for="flexRadioDefault10">Green</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-5 my-4 flex-wrap">
+              <div class="d-flex align-items-center">
+                <div class="bg-warning px-2 py-1 pointer js-remove-item" data-value=-1>
+                  <i class="fas fa-minus"></i>
+                </div>
+                <span class="bg-light px-3 py-1 js-quantity-item">1</span>
+                <div class="bg-warning px-2 py-1 pointer js-add-item" data-value=1>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+
+              <div class="bg-warning px-3 py-1 d-flex align-items-center pointer">
+                <i class="fas fa-cart-plus me-2"></i>
+                <span>Add To Chart</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mt-5 flex-wrap">
+              <p class="fw-bold me-3 mb-0">Share on: </p>
+              <div>
+                <a href="" class="text-dark"><i class="fab fa-facebook-f me-2"></i></a>
+                <a href="" class="text-dark"><i class="fab fa-twitter me-2"></i></a>
+                <a href="" class="text-dark"><i class="fab fa-linkedin-in me-2"></i></a>
+                <a href="" class="text-dark"><i class="fab fa-pinterest me-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="bg-light pb-5">
+    <div class="container bg-white p-3">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active text-dark" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+          <button class="nav-link text-dark" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Information</button>
+          <button class="nav-link text-dark" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews (1)</button>
+        </div>
+      </nav>
+      <div class="tab-content my-3" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <h3>Product Description</h3>
+          <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt. <br><br>Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.</p>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <h3>Additional Information</h3>
+          <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
+          <div class="row">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0">
+                  Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                </li>
+                <li class="list-group-item px-0">
+                  Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                </li>
+                <li class="list-group-item px-0">
+                  Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                </li>
+                <li class="list-group-item px-0">
+                  Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0">
+                  Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                </li>
+                <li class="list-group-item px-0">
+                  Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                </li>
+                <li class="list-group-item px-0">
+                  Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                </li>
+                <li class="list-group-item px-0">
+                  Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>1 Review for "Product Name"</h4>
+              <div class="d-flex flex-wrap">
+                <div>
+                  <img class="rounded-circle" src="img/user.jpg" alt="">
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center mt-2">
+                    <h6 class="m-0">John Doe</h6>
+                    <span class="fst-italic m-0 ms-1">- 01 Jan 2021</span>
+                  </div>
+
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h4>Leave a review</h4>
+              <span style="font-size: 0.8rem;">Your email address will not be published. Required fields are marked *</span>
+              <div class="d-flex align-items-center text-warning mt-2">
+                <p class="m-0 text-dark me-3">Your Rating *: </p>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <form class="mt-2">
+                <div>
+                  <label for="FormControlTextarea1" class="form-label">Your Review *:</label>
+                  <textarea class="form-control" id="FormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <div class="mt-2">
+                  <label for="FormControlInput1" class="form-label">Your Name *:</label>
+                  <input type="text" class="form-control" id="FormControlInput1" required>
+                </div>
+                <div class="mt-2">
+                  <label for="FormControlInput2" class="form-label">Your Email *:</label>
+                  <input type="email" class="form-control" id="FormControlInput2" required>
+                </div>
+                <button class="btn btn-warning mt-4">Leave Your Review</button>
+              </form>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <h1 class="text-uppercase mb-4">You may also like</h1>
+      <div class="owl-carousel suggestion-carousel owl-theme">
+        <div class="item">
+          <div class="product-hover">
+            <div class="bg-light text-center">
+              <div class="position-relative">
+                <div>
+                  <img class="img-fluid" src="img/product-1.jpg" alt="">
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 bg-white">
+                <p class="fw-bold m-0">Product Name Here</p>
+                <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-secondary">(99)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product-hover">
+            <div class="bg-light text-center">
+              <div class="position-relative">
+                <div>
+                  <img class="img-fluid" src="img/product-2.jpg" alt="">
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 bg-white">
+                <p class="fw-bold m-0">Product Name Here</p>
+                <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-secondary">(99)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product-hover">
+            <div class="bg-light text-center">
+              <div class="position-relative">
+                <div>
+                  <img class="img-fluid" src="img/product-3.jpg" alt="">
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 bg-white">
+                <p class="fw-bold m-0">Product Name Here</p>
+                <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-secondary">(99)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product-hover">
+            <div class="bg-light text-center">
+              <div class="position-relative">
+                <div>
+                  <img class="img-fluid" src="img/product-4.jpg" alt="">
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 bg-white">
+                <p class="fw-bold m-0">Product Name Here</p>
+                <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-secondary">(99)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product-hover">
+            <div class="bg-light text-center">
+              <div class="position-relative">
+                <div>
+                  <img class="img-fluid" src="img/product-5.jpg" alt="">
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 bg-white">
+                <p class="fw-bold m-0">Product Name Here</p>
+                <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-secondary">(99)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="product-hover">
+            <div class="bg-light text-center">
+              <div class="position-relative">
+                <div>
+                  <img class="img-fluid" src="img/product-6.jpg" alt="">
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle bg-white-50 h-100 w-100 d-none align-items-center justify-content-center gap-2 product-options">
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="border border-dark p-2 d-flex aligm-items-center justify-content-center product-icon-hover">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 bg-white">
+                <p class="fw-bold m-0">Product Name Here</p>
+                <span class="fs-4">$123.00</span> <span class="text-decoration-line-through fs-5 ms-2">$123.00</span>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-secondary">(99)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <footer class="bg-dark-grey pt-5">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-uppercase fw-bold">Get in Touch</h3>
+          <p class="">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor
+          </p>
+          <ul class="list-unstyled">
+            <li class="footer-contact my-1">123 Street, New York, USA</li>
+            <li class="footer-contact my-1">info@example.com</li>
+            <li class="footer-contact my-1">+012 345 67890</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-blue text-uppercase fw-bold">Quick Links</h3>
+          <ul class="text-white list-unstyled">
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Home</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">About Us</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Our Services</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Meet The Team</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Latest Blog</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-uppercase fw-bold">Popular Links</h3>
+          <ul class="list-unstyled">
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Home</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">About Us</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Our Services</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Meet The Team</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Latest Blog</li>
+            </a>
+            <a href="" class="text-decoration-none text-white">
+              <li class="footer-links my-1">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+          <h3 class="text-blue text-uppercase fw-bold">Newsletter</h3>
+          <div class="input-group">
+            <input class="form-control border-0" type="text" placeholder="You Email">
+            <button class="btn btn-warning text-secondary">Sign Up</button>
+          </div>
+          <p class="text-blue fw-bold text-uppercase my-3">Follow Us</p>
+          <div class="d-flex text-white gap-3 flex-wrap">
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="py-2 px-3 text-secondary bg-warning">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <p class="text-white">© Domain. All Rights Reserved. Designed by HTML Codex</p>
+        </div>
+        <div class="col-12 col-sm-6 text-start text-sm-end pb-2">
+          <img class="img-fluid" src="img/payments.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
